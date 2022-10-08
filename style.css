@@ -156,7 +156,7 @@ header {
   display: grid;
   margin-top: 2rem;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  grid-gap: 1rem;
+  grid-gap: 1.5rem;
   justify-items: center;
 }
 
@@ -172,6 +172,39 @@ header {
 .info_text {
   width: 60vw;
   min-width: 300px;
+}
+
+.card_name {
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+.card_slogan {
+  margin-top: 0.5rem;
+}
+
+/* .card_title {
+  margin-top: 0.5rem;
+} */
+.card a {
+  text-decoration: none;
+  color: black;
+}
+
+.card-button-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+input[type="button"] {
+  background-color: grey;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 16px 20px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 
 #contact {
@@ -211,4 +244,30 @@ footer section {
 
 footer section div {
   margin: 0px 1rem 1rem 1rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: box-shadow 0.3s;
+  background: #fff;
+  float: left;
+  border-radius: 10px;
+  border: none;
+  min-width: 100%;
+}
+
+.card:hover {
+  box-shadow: 5px 5px 11px rgba(33, 33, 33, 0.2);
+}
+
+.card_image {
+  min-width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.card-slogan {
+  font-size: 0.5rem;
 }
