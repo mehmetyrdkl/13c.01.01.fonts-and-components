@@ -249,25 +249,39 @@ footer section div {
 .card {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   transition: box-shadow 0.3s;
   background: #fff;
   float: left;
   border-radius: 10px;
   border: none;
   min-width: 100%;
+  background-color: rgb(214, 214, 214);
+  padding-bottom: 0.5rem;
 }
 
 .card:hover {
-  box-shadow: 5px 5px 11px rgba(33, 33, 33, 0.2);
+  box-shadow: 5px 5px 11px rgba(33, 33, 33, 0.3);
 }
 
 .card_image {
-  min-width: 100%;
+  min-height: 250px;
+  overflow: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   aspect-ratio: 1/1;
-  object-fit: cover;
+  border-radius: 10px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 
 .card-slogan {
   font-size: 0.5rem;
+}
+
+.card-text-containter {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
 }
