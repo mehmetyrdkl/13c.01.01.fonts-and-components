@@ -181,6 +181,7 @@ header {
 
 .card_slogan {
   margin-top: 0.5rem;
+  font-style: italic;
 }
 
 /* .card_title {
@@ -197,7 +198,6 @@ header {
 }
 
 input[type="button"] {
-  background-color: grey;
   border: none;
   border-radius: 5px;
   color: white;
@@ -256,7 +256,7 @@ footer section div {
   border-radius: 10px;
   border: none;
   min-width: 100%;
-  background-color: rgb(214, 214, 214);
+  background-color: rgb(238, 238, 238);
   padding-bottom: 0.5rem;
 }
 
@@ -284,4 +284,12 @@ footer section div {
   display: flex;
   flex-direction: column;
   padding: 1rem;
+}
+
+.card_button_negative {
+  background-color: rgb(138, 138, 138);
+}
+
+.card_button_positive {
+  background-color: rgb(117, 117, 117);
 }
